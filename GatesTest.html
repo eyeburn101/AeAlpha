@@ -1,51 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel='stylesheet' type='text/css' href='Gates.css' >
-<link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-function showV() {
-  var x = document.getElementById("VGates");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <link href="style.css" rel="stylesheet" />
-</head>
-<body>
-<p><font color="red">
-<center><b>Message <a href ="https://alpha.astroempires.com/profile.aspx?player=296696">Starburn</a> with any updates or corrections to this page.</b></center></font></p><p>
-<button onclick="showV()">Show/hide V Bases</button>
-<button onclick="showSHLD()">Show/hide SHLD Bases</button>
-<button onclick="showBANI()">Show/hide Bani Bases</button>
-
-<div id="VGates">
-
-
-  <a href="https://alpha.astroempires.com/map.aspx?loc=A01:72:81:12">A01:72:81:12</a> ( 7 ) V Gabriel<br>
-  
-  
-</div>
-<div id="SHLDGates">
-
-
-  <a href="https://alpha.astroempires.com/map.aspx?loc=A31:38:98:31">A31:38:98:31</a> ( 16 ) SHLD CrazyLegs<br>
-  
-  
-</div>
-<div id="BANIGates">
-
-
-  <a href="https://alpha.astroempires.com/map.aspx?loc=A00:63:07:10">A01:72:81:12</a> ( 10 ) BANI Daneel<br>
-  
-  
-</div>
-
-</body>
+  <link rel='stylesheet' type='text/css' href='Gates.css'>
+  <link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    /*function showV() {
+      var x = document.getElementById("VGates");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }*/
+  </script>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p>
+      <font color="red">
+        <center>
+          <b>Message <a href="https://alpha.astroempires.com/profile.aspx?player=296696">Starburn</a> with any updates or corrections to this page. </b>
+        </center>
+      </font>
+    </p>
+    <h1>Vandals Gates Master List</h1>
+    <div>
+      <h3>Navigation</h3>
+      <a href="#A00">A00</a>
+      <a href="#A01">A01</a>
+      <a href="#A02">A02</a>
+      <a href="#A03">A03</a>
+      <a href="#A04">A04</a>
+      <a href="#A05">A05</a>
+      <a href="#A06">A06</a>
+      <a href="#A07">A07</a>
+      <a href="#A08">A08</a>
+      <a href="#A09">A09</a>
+      <br>
+      <a href="#A10">A10</a>
+      <a href="#A11">A11</a>
+      <a href="#A12">A12</a>
+      <a href="#A13">A13</a>
+      <a href="#A14">A14</a>
+      <a href="#A15">A15</a>
+      <a href="#A16">A16</a>
+      <a href="#A17">A17</a>
+      <a href="#A18">A18</a>
+      <a href="#A19">A19</a>
+      <br>
+      <a href="#A20">A20</a>
+      <a href="#A21">A21</a>
+      <a href="#A22">A22</a>
+      <a href="#A23">A23</a>
+      <a href="#A24">A24</a>
+      <a href="#A25">A25</a>
+      <a href="#A26">A26</a>
+      <a href="#A27">A27</a>
+      <a href="#A28">A28</a>
+      <a href="#A29">A29</a>
+      <br>
+      <a href="#A30">A30</a>
+      <a href="#A31">A31</a>
+      <a href="#A32">A32</a>
+      <a href="#A33">A33</a>
+      <a href="#A34">A34</a>
+      <a href="#A35">A35</a>
+      <a href="#A36">A36</a>
+      <a href="#A37">A37</a>
+      <a href="#A38">A38</a>
+      <a href="#A39">A39</a>
+      <br>
+      <a href="#A40">A40</a>
+      <a href="#A41">A41</a>
+      <a href="#A42">A42</a>
+      <a href="#A43">A43</a>
+      <a href="#A44">A44</a>
+      <a href="#A45">A45</a>
+      <a href="#A46">A46</a>
+      <a href="#A47">A47</a>
+      <a href="#A48">A48</a>
+      <a href="#A49">A49</a>
+      <br>
+      <a href="#A50">A50</a>
+      <a href="#A51">A51</a>
+      <a href="#A52">A52</a>
+      <a href="#A53">A53</a>
+      <a href="#A54">A54</a>
+      <a href="#A55">A55</a>
+      <a href="#A56">A56</a>
+      <a href="#A57">A57</a>
+      <a href="#A58">A58</a>
+      <a href="#A59">A59</a>
+      <br>
+      <a href="#A60">A60</a>
+      <a href="#A61">A61</a>
+      <a href="#A62">A62</a>
+      <a href="#A63">A63</a>
+      <a href="#A64">A64</a>
+      <a href="#A65">A65</a>
+      <a href="#A66">A66</a>
+      <a href="#A67">A67</a>
+      <a href="#A68">A68</a>
+      <a href="#A69">A69</a>
+      <br>
+      <a href="#A70">A70</a>
+      <a href="#A71">A71</a>
+      <a href="#A72">A72</a>
+      <a href="#A73">A73</a>
+      <a href="#A74">A74</a>
+      <a href="#A75">A75</a>
+      <a href="#A76">A76</a>
+      <a href="#A77">A77</a>
+      <a href="#A78">A78</a>
+      <a href="#A79">A79</a>
+      <br>
+      <h3>Guild's gates displayed</h3>
+      <p>
+        <b>{V}</b>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </p>
+      <p>
+        <b>SHLD</b>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </p>
+      <p>
+        <b>SPuD</b>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </p>
+      <p>
+        <b>BANI</b>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </p>
+      <p>
+        <b>=A=</b>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </p>
+      <h3>Minimum gate level displayed</h3>
+      <input type="range" id="GateMin" name="GateMin" list="tickmarks" value="5" oninput="this.nextElementSibling.value = this.value" min="1" max="12">
+      <output>5</output>
+    </div>
+    <h2>Wormhole Locations</h2>
+    <a href="https://alpha.astroempires.com/map.aspx?loc=A04:86:77:11">A04:86:77:11</a> Closes on 15 Jun 2022 <br>
+    <a href="https://alpha.astroempires.com/map.aspx?loc=A19:93:29:10">A19:93:29:10</a> Closes on 20 Jul 2022 <br>
+    <a href="https://alpha.astroempires.com/map.aspx?loc=A24:27:84:32">A24:27:84:32</a> Closes on 15 Aug 2022 <br>
+    <a href="https://alpha.astroempires.com/map.aspx?loc=A34:65:66:40">A34:65:66:40</a> Closes on 18 Jun 2022 <br>
+    <a href="https://alpha.astroempires.com/map.aspx?loc=A41:73:79:21">A41:73:79:21</a> Closes on 11 Jun 2022 <br>
+    <a href="https://alpha.astroempires.com/map.aspx?loc=A54:52:41:21">A54:52:41:21</a> Closes on 24 Jul 2022 <br>
+    <a href="https://alpha.astroempires.com/map.aspx?loc=A61:34:97:22">A61:34:97:22</a> Closes on 25 Aug 2022 <br>
+    <a href="https://alpha.astroempires.com/map.aspx?loc=A70:96:10:11">A70:96:10:11</a> Closes on 11 Jun 2022 <br>
+    <h2>Jump Gates</h2>
+    <p> LEGEND: <br> ( # ) = Jump Gate Level <br> ( #/# ) = Jump Gate Level / Logistics Commander Level <br>
+    </p>
+    <p id="A00">
+      <b>A00:</b>
+      <br>
+    </p>
+    <p id="A01">
+      <b>A01:</b>
+      <br>
+    </p>
+    <p id="A02">
+      <b>A02:</b>
+      <br>
+    </p>
+    <p id="A03">
+      <b>A03:</b>
+      <br>
+    </p>
+    <p id="A04">
+      <b>A04:</b>
+      <br>
+    </p>
+    <p id="A05">
+      <b>A05:</b>
+      <br>
+    </p>
+    <p id="A06">
+      <b>A06:</b>
+      <br>
+    </p>
+    <p id="A07">
+      <b>A07:</b>
+      <br>
+    </p>
+    <p id="A08">
+      <b>A08:</b>
+      <br>
+    </p>
+    <p id="A09">
+      <b>A09:</b>
+      <br>
+    </p>
+    <p id="A10">
+      <b>A10:</b>
+      <br>
+    </p>
+    <p id="A11">
+      <b>A11:</b>
+      <br>
+    </p>
+    <p id="A12">
+      <b>A12:</b>
+      <br>
+    </p>
+    <p id="A13">
+      <b>A13:</b>
+      <br>
+    </p>
+    <p id="A14">
+      <b>A14:</b>
+      <br>
+    </p>
+    <p id="A15">
+      <b>A15:</b>
+      <br>
+    </p>
+    <p id="A16">
+      <b>A16:</b>
+      <br>
+    </p>
+    <p id="A17">
+      <b>A17:</b>
+      <br>
+    </p>
+    <p id="A18">
+      <b>A18:</b>
+      <br>
+    </p>
+    <p id="A19">
+      <b>A19:</b>
+      <br>
+    </p>
+    <p id="A20">
+      <b>A20:</b>
+      <br>
+    </p>
+    <p id="A21">
+      <b>A21:</b>
+      <br>
+    </p>
+    <p id="A22">
+      <b>A22:</b>
+      <br>
+    </p>
+    <p id="A23">
+      <b>A23:</b>
+      <br>
+    </p>
+    <p id="A24">
+      <b>A24:</b>
+      <br>
+    </p>
+    <p id="A25">
+      <b>A25:</b>
+      <br>
+    </p>
+    <p id="A26">
+      <b>A26:</b>
+      <br>
+    </p>
+    <p id="A27">
+      <b>A27:</b>
+      <br>
+    </p>
+    <p id="A28">
+      <b>A28:</b>
+      <br>
+    </p>
+    <p id="A29">
+      <b>A29:</b>
+      <br>
+    </p>
+    <p id="A30">
+      <b>A30:</b>
+      <br>
+    </p>
+    <p id="A31">
+      <b>A31:</b>
+      <br>
+    </p>
+    <p id="A32">
+      <b>A32:</b>
+      <br>
+    </p>
+    <p id="A33">
+      <b>A33:</b>
+      <br>
+    </p>
+    <p id="A34">
+      <b>A34:</b>
+      <br>
+    </p>
+    <p id="A35">
+      <b>A35:</b>
+      <br>
+    </p>
+    <p id="A36">
+      <b>A36:</b>
+      <br>
+    </p>
+    <p id="A37">
+      <b>A37:</b>
+      <br>
+    </p>
+    <p id="A38">
+      <b>A38:</b>
+      <br>
+    </p>
+    <p id="A39">
+      <b>A39:</b>
+      <br>
+    </p>
+    <p id="A40">
+      <b>A40:</b>
+      <br>
+    </p>
+    <p id="A51">
+      <b>A51:</b>
+      <br>
+    </p>
+    <p id="A52">
+      <b>A52:</b>
+      <br>
+    </p>
+    <p id="A53">
+      <b>A53:</b>
+      <br>
+    </p>
+    <p id="A54">
+      <b>A54:</b>
+      <br>
+    </p>
+    <p id="A55">
+      <b>A55:</b>
+      <br>
+    </p>
+    <p id="A56">
+      <b>A56:</b>
+      <br>
+    </p>
+    <p id="A57">
+      <b>A57:</b>
+      <br>
+    </p>
+    <p id="A58">
+      <b>A58:</b>
+      <br>
+    </p>
+    <p id="A59">
+      <b>A59:</b>
+      <br>
+    </p>
+    <p id="A60">
+      <b>A60:</b>
+      <br>
+    </p>
+    <p id="A61">
+      <b>A61:</b>
+      <br>
+    </p>
+    <p id="A62">
+      <b>A62:</b>
+      <br>
+    </p>
+    <p id="A63">
+      <b>A63:</b>
+      <br>
+    </p>
+    <p id="A64">
+      <b>A64:</b>
+      <br>
+    </p>
+    <p id="A65">
+      <b>A65:</b>
+      <br>
+    </p>
+    <p id="A66">
+      <b>A66:</b>
+      <br>
+    </p>
+    <p id="A67">
+      <b>A67:</b>
+      <br>
+    </p>
+    <p id="A68">
+      <b>A68:</b>
+      <br>
+    </p>
+    <p id="A69">
+      <b>A69:</b>
+      <br>
+    </p>
+    <p id="A70">
+      <b>A70:</b>
+      <br>
+    </p>
+    <p id="A71">
+      <b>A71:</b>
+      <br>
+    </p>
+    <p id="A72">
+      <b>A72:</b>
+      <br>
+    </p>
+    <p id="A73">
+      <b>A73:</b>
+      <br>
+    </p>
+    <p id="A74">
+      <b>A74:</b>
+      <br>
+    </p>
+    <p id="A75">
+      <b>A75:</b>
+      <br>
+    </p>
+    <p id="A76">
+      <b>A76:</b>
+      <br>
+    </p>
+    <p id="A77">
+      <b>A77:</b>
+      <br>
+    </p>
+    <p id="A78">
+      <b>A78:</b>
+      <br>
+    </p>
+    <p id="A79">
+      <b>A79:</b>
+      <br>
+    </p>
+  </body>
 </html>
