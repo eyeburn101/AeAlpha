@@ -3,7 +3,20 @@
   <link rel='stylesheet' type='text/css' href='Gates.css'>
   <link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
   <script>
+  
+  
+  var regex = new RegExp( /([A-Z][0-9][0-9]:[0-9][0-9]:[0-9][0-9]:[0-9][0-9])/, 'g' );
+  var arr;
+  
+   var teststring = "A10:03:39:10 (11) 294169 [SHLD] DodgerA10:04:47:13 (7) 296655 [{V}] Bambuli -LA-A10:04:73:10 (4) 241131 [BANI] RQ/CT KoalhecaA10:04:85:11 (7) 296655 [{V}] Bambuli -LA-A10:05:92:13 (8) 22080 [SHLD] JezbuckA10:06:84:22 (5) 298478 [SHLD] RivenA10:11:96:11 (10) 278308 [SHLD] BixsA10:12:89:11 (10) 298478 [SHLD] RivenA10:12:89:11 (10) 298478 [SHLD] Riven";
+  
+  while ((arr = regex.exec(teststring)) !== null ) {
+  console.log(arr[0]);
+  };
+  
+  
     /*function showV() {
       var x = document.getElementById("VGates");
       if (x.style.display === "none") {
@@ -11,6 +24,12 @@
       } else {
         x.style.display = "none";
       }
+	  
+	  <a href="https://alpha.astroempires.com/map.aspx?loc=A04:86:77:11">A04:86:77:11</a>
+	  
+	  '<a href="https://alpha.astroempires.com/map.aspx?loc=' + var + '">' + var + '</a>'
+	  ([A-Z][0-9][0-9]:[0-9][0-9]:[0-9][0-9]:[0-9][0-9])
+	  
     }*/
   </script>
   <head>
@@ -212,6 +231,16 @@
     <p id="A10">
       <b>A10:</b>
       <br>
+	  <div > A10:03:39:10 (11) 294169 [SHLD] Dodger <br> </div>
+	  <div > A10:04:47:13 (7) 296655 [{V}] Bambuli -LA- <br> </div>
+	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:04:73:10">A10:04:73:10</a> (4) 241131 [BANI] RQ/CT Koalheca <br> </div>
+	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:04:85:11">A10:04:85:11</a> (7) 296655 [{V}] Bambuli -LA- <br> </div>
+	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:05:92:13">A10:05:92:13</a> (8) 22080 [SHLD] Jezbuck <br> </div>
+	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:06:84:22">A10:06:84:22</a> (5) 298478 [SHLD] Riven <br> </div>
+	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:11:96:11">A10:11:96:11</a> (10) 278308 [SHLD] Bixs <br> </div>
+	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:12:89:11">A10:12:89:11</a> (10) 298478 [SHLD] Riven <br> </div>
+	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:15:88:10">A10:15:88:10</a> (10) 298478 [SHLD] Riven <br> </div>
+	  
     </p>
     <p id="A11">
       <b>A11:</b>
