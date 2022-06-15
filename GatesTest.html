@@ -5,43 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script>
-  
-  
-  $( document ).ready(function() {
-  var match;
-  var regex = new RegExp( /([A-Z][0-9][0-9]:[0-9][0-9]:[0-9][0-9]:[0-9][0-9])/, 'g' );
-  var doc = document.getElementById("fullpage").innerHTML; 
-    while ((match = regex.exec(doc)) !== null ) {
-  console.log(match[0]);
-  };
-  
-  
-  //console.log(doc);
-  
-  });
-  
-  
-   var teststring = "A10:03:39:10 (11) 294169 [SHLD] DodgerA10:04:47:13 (7) 296655 [{V}] Bambuli -LA-A10:04:73:10 (4) 241131 [BANI] RQ/CT KoalhecaA10:04:85:11 (7) 296655 [{V}] Bambuli -LA-A10:05:92:13 (8) 22080 [SHLD] JezbuckA10:06:84:22 (5) 298478 [SHLD] RivenA10:11:96:11 (10) 278308 [SHLD] BixsA10:12:89:11 (10) 298478 [SHLD] RivenA10:12:89:11 (10) 298478 [SHLD] Riven";
-   
-  
-
-  
-  
-    /*function showV() {
-      var x = document.getElementById("VGates");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-	  
-	  <a href="https://alpha.astroempires.com/map.aspx?loc=A04:86:77:11">A04:86:77:11</a>
-	  
-	  '<a href="https://alpha.astroempires.com/map.aspx?loc=' + match[0] + '">' + match[0] + '</a>'
-	  
-	  ([A-Z][0-9][0-9]:[0-9][0-9]:[0-9][0-9]:[0-9][0-9])
-	  
-    }*/
+    $(document).ready(function() {
+          var regex = new RegExp(/([A-Z][0-9][0-9]:[0-9][0-9]:[0-9][0-9]:[0-9][0-9])/, 'g');
+          var match;
+          var doc = document.getElementById("fullpage").innerHTML;
+          while ((match = regex.exec(doc)) !== null) {
+            $("body").children().each(function() {
+                $(this).html($(this).html().replace(match[0], '<a href="https://alpha.astroempires.com/map.aspx?loc=' + match[0] + '">' + match[0] + '</a>'));
+                });
+              };
+            });
+          /*function showV() {
+            var x = document.getElementById("VGates");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }*/
   </script>
   <head>
     <meta charset="utf-8">
@@ -188,14 +169,16 @@
       <output>5</output>
     </div>
     <h2>Wormhole Locations</h2>
-    <a href="https://alpha.astroempires.com/map.aspx?loc=A04:86:77:11">A04:86:77:11</a> Closes on 15 Jun 2022 <br>
-    <a href="https://alpha.astroempires.com/map.aspx?loc=A19:93:29:10">A19:93:29:10</a> Closes on 20 Jul 2022 <br>
-    <a href="https://alpha.astroempires.com/map.aspx?loc=A24:27:84:32">A24:27:84:32</a> Closes on 15 Aug 2022 <br>
-    <a href="https://alpha.astroempires.com/map.aspx?loc=A34:65:66:40">A34:65:66:40</a> Closes on 18 Jun 2022 <br>
-    <a href="https://alpha.astroempires.com/map.aspx?loc=A41:73:79:21">A41:73:79:21</a> Closes on 11 Jun 2022 <br>
-    <a href="https://alpha.astroempires.com/map.aspx?loc=A54:52:41:21">A54:52:41:21</a> Closes on 24 Jul 2022 <br>
-    <a href="https://alpha.astroempires.com/map.aspx?loc=A61:34:97:22">A61:34:97:22</a> Closes on 25 Aug 2022 <br>
-    <a href="https://alpha.astroempires.com/map.aspx?loc=A70:96:10:11">A70:96:10:11</a> Closes on 11 Jun 2022 <br>
+	<p>
+    A04:86:77:11 Closes on 15 Jun 2022 <br>
+    A19:93:29:10 Closes on 20 Jul 2022 <br>
+    A24:27:84:32 Closes on 15 Aug 2022 <br>
+    A34:65:66:40 Closes on 18 Jun 2022 <br>
+    A41:73:79:21 Closes on 11 Jun 2022 <br>
+    A54:52:41:21 Closes on 24 Jul 2022 <br>
+    A61:34:97:22 Closes on 25 Aug 2022 <br>
+    A70:96:10:11 Closes on 11 Jun 2022 <br>
+	</p>
     <h2>Jump Gates</h2>
     <p> LEGEND: <br> ( # ) = Jump Gate Level <br> ( #/# ) = Jump Gate Level / Logistics Commander Level <br>
     </p>
@@ -241,16 +224,16 @@
     </p>
     <p id="A10">
       <b>A10:</b>
-      <br>
-	  <div > A10:03:39:10 (11) 294169 [SHLD] Dodger <br> </div>
-	  <div > A10:04:47:13 (7) 296655 [{V}] Bambuli -LA- <br> </div>
-	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:04:73:10">A10:04:73:10</a> (4) 241131 [BANI] RQ/CT Koalheca <br> </div>
-	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:04:85:11">A10:04:85:11</a> (7) 296655 [{V}] Bambuli -LA- <br> </div>
-	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:05:92:13">A10:05:92:13</a> (8) 22080 [SHLD] Jezbuck <br> </div>
-	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:06:84:22">A10:06:84:22</a> (5) 298478 [SHLD] Riven <br> </div>
-	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:11:96:11">A10:11:96:11</a> (10) 278308 [SHLD] Bixs <br> </div>
-	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:12:89:11">A10:12:89:11</a> (10) 298478 [SHLD] Riven <br> </div>
-	  <div > <a href="https://alpha.astroempires.com/map.aspx?loc=A10:15:88:10">A10:15:88:10</a> (10) 298478 [SHLD] Riven <br> </div>
+	  <br>
+	  A10:03:39:10 (11) 294169 [SHLD] Dodger <br>
+	  A10:04:47:13 (7) 296655 [{V}] Bambuli -LA- <br>
+	  A10:04:73:10 (4) 241131 [BANI] RQ/CT Koalheca <br>
+	  A10:04:85:11 (7) 296655 [{V}] Bambuli -LA- <br>
+	  A10:05:92:13 (8) 22080 [SHLD] Jezbuck <br>
+	  A10:06:84:22 (5) 298478 [SHLD] Riven <br>
+	  A10:11:96:11 (10) 278308 [SHLD] Bixs <br>
+	  A10:12:89:11 (10) 298478 [SHLD] Riven <br>
+	  A10:15:88:10 (10) 298478 [SHLD] Riven <br>
 	  
     </p>
     <p id="A11">
